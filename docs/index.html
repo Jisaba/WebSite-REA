@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Iconos bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <img src="./img/Logos_Institucionales.png" alt="Logo" height="40" class="d-inline-block align-text-top">
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <h1 class="text-center">Enseñanza y aprendizaje con recursos abiertos</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <p>Hoy en día, a diferencia de lo que se creía antes del surgimiento de Internet, se considera que el conocimiento es algo que existe, se produce y modifica en las redes gracias a los procesos conectivos que los individuos llevan a cabo con otras personas, materiales y bases de datos (Durán et al, 2022). De acuerdo con Sánchez (2019), se conoce y aprende con y en un ambiente virtual dinámico que se actualiza y modifica constantemente. Existen múltiples nodos o fuentes dentro de Internet con las cuales las personas pueden conectar para generar redes propias de aprendizaje y extraer de ellas conocimiento.</p>
+                <p>El conocimiento es abierto si cualquier persona es libre para acceder a él, usarlo, modificarlo y compartirlo bajo condiciones que reconozcan y preserven la autoría y las mismas condiciones de apertura. En particular, los recursos educativos abiertos son herramientas, contenidos y software que se desarrollan bajo los principios de reúso, libre distribución, libre acceso y gratuidad. Dichos recursos se utilizan tanto para apoyar y fortalecer las prácticas docentes, como para extender las opciones de aprendizaje. A lo largo de este curso se identificarán algunas de las prácticas educativas realizadas con recursos abiertos, así como espacios donde se puede tener acceso a los mismos.</p>
+            </div>
+        </div>
+        <div class="cambio-pagina">
+            <a href="./2. bienvenida.html">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="hover focus" data-bs-custom-class="custom-popover" data-bs-content="Bienvenida">
+                    Siguiente <i class="bi bi-caret-right-fill"></i>
+                </button>
+            </a>
+        </div>
+    </main>
+    <footer class="container-fluid bg-dark text-light">
+        <div class="row  justify-content-center py-4">
+            <div class="col-10 d-md-flex flex-nowrap align-items-center">
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./img/cc_by_nc_sa-01ee261355.png" alt="creative commons"></a>
+                <p class="px-4 my-0">This course content is offered under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC Attribution Non-Commercial Share Alike</a> license. Content in this course can be considered under this license unless otherwise noted.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+</html>
