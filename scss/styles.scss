@@ -121,6 +121,16 @@ main.container {
     p, li {
         text-align: justify;
     }
+
+    .contenedorF {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        ul {
+            margin-bottom: 20px;
+        }
+    }
     
     /* Botones avanzar y retroceder */
     
